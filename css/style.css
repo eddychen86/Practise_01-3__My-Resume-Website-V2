@@ -1,0 +1,370 @@
+*{
+    position: relative;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body{
+    background-color: #dadbdb;
+    opacity: 1;
+    background-image: radial-gradient(#9a9a9a 2px, #dadbdb 2px);
+    background-size: 40px 40px;
+    
+}
+
+.row{
+    margin: 0 !important;
+}
+
+/* navbar */
+.menu{
+    z-index: 50;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    box-shadow: 0px 5px 30px 10px  rgba(0,0,0,0.4);
+    list-style: none;
+    position: fixed;
+    top: 0;
+}
+.menu .menu__item{
+    margin: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.menu .menu__item:after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: rgb(0, 95, 238);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-out;
+}
+.menu .menu__item:hover.menu__item:after{
+    width: 100%;
+}
+.menu .menu__link{
+    color: rgb(0, 0, 0);
+    line-height: 32px;
+    text-decoration: none;
+}
+.menu .menu__icon{
+    justify-content: flex-end;
+}
+.menu .menu__icon svg{
+    /* border: 1px solid; */
+    width: 30px;
+    margin: 0px 15px 0px 15px;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+.menu .menu__icon svg:hover{
+    color: rgb(0, 95, 238);
+}
+@media screen and (max-width:768px) {
+    .menu .menu__btn,
+    .menu .menu__icon{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .menu .menu__icon{
+        margin-bottom: 10px;
+    }
+}
+
+/* about */
+header *{
+    height: 100%;
+}
+header{
+    /* background-color: rgb(218, 219, 219); */
+    /* overflow: hidden; */
+    height: 100vh;
+}
+header .col-6{
+    padding: 0;
+}
+header p{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+header .row{
+    z-index: 2;
+}
+
+header .title, header .subtitle{
+    height: auto;
+    margin: 20px;
+    font-size: 50px;
+    -webkit-text-stroke: 2px;
+    position: absolute;
+    color: rgb(157, 161, 185);
+}
+header .title{
+    top: 10%;
+    right: 0;
+}
+header .subtitle{
+    bottom: 5%;
+}
+
+.about__info-1,
+.about__info-2{
+    width: 80%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    background-color: white;
+}
+.about__info-1{
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my__photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my__info-1{
+    height: auto;
+    width: 80% !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tw-Name, .en-Name{
+    text-align: center;
+}
+.skill-bar{
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 100%;
+}
+.bar1-1, .bar2-1, .bar3-1, .bar4-1,
+.bar5-1, .bar6-1, .bar7-1, .bar8-1{
+    height: 10px;
+    border-radius: 7px;
+    border: 1px solid;
+}
+.bar1-1, .bar2-1, .bar3-1, .bar4-1,
+.bar5-1, .bar6-1, .bar7-1{
+    margin-bottom: 10px;
+}
+.bar1-2, .bar2-2, .bar3-2, .bar4-2,
+.bar5-2, .bar6-2{
+    height: 4px;
+    margin: 2px;
+    border-radius: 2.5px;
+}
+.bar1-1{
+    color: rgb(255, 115, 0);
+}
+.bar1-2{
+    background-color: rgb(255, 115, 0);
+}
+.bar2-1{
+    color: rgb(0, 95, 238);
+}
+.bar2-2{
+    background-color: rgb(0, 95, 238);
+}
+.bar3-1{
+    color: rgb(66, 28, 102);
+}
+.bar3-2{
+    background-color: rgb(66, 28, 102);
+    width: 80%;
+}
+.bar4-1{
+    color: rgb(132, 0, 255);
+}
+.bar4-2{
+    background-color: rgb(132, 0, 255);
+    width: 70%;
+}
+.bar5-1{
+    color: rgb(255, 0, 242);
+}
+.bar5-2{
+    background-color: rgb(255, 0, 242);
+    width: 60%;
+}
+.bar6-1{
+    color: rgb(3, 196, 35);
+}
+.bar6-2{
+    background-color: rgb(3, 196, 35);
+    width: 50%;
+}
+
+.about__info-2{
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about__info-2 p, .my__info-2{
+    width: 80%;
+    height: auto;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my__info-2{
+    text-align: center;
+    margin: 0;
+}
+@media screen and (max-width: 992px) {
+    .about__info-1 img{
+        width: 60%;
+        height: 60%;
+    }
+    .about__info-2{
+        top: 20%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        height: auto;
+    }
+    .my__photo{
+        margin-top: 20% !important;
+    }
+    header .row{
+        height: auto;
+        width: auto;
+    }
+    .about__info-1, .about__info-2{
+        border-radius: 0;
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.4);
+    }
+    .about__info-2{
+        margin-top: 50px;
+    }
+}
+
+
+/* work */
+.work *{
+    height: 100%;
+    /* border: 1px solid; */
+    position: relative;
+}
+.work{
+    /* background-color: rgb(218, 219, 219); */
+    height: 100vh;
+}
+.work h5{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.work .row{
+    z-index: 2;
+    height: 70%;
+    width: 90%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.work .title, .work .subtitle{
+    height: auto;
+    margin: 20px;
+    font-size: 50px;
+    -webkit-text-stroke: 2px;
+    position: absolute;
+    color: rgb(157, 161, 185);
+}
+.work .title{
+    top: 10%;
+}
+.work .subtitle{
+    bottom: 0%;
+    right: 0%;
+}
+
+.work .download{
+    height: auto;
+    margin: 30px 30px 0px 30px;
+}
+.work .download button{
+    border-radius: 100px;
+    padding: 0px 15px 0px 15px;
+    height: 0.8cm;
+    margin-bottom: 0px;
+}
+.work .shopping{
+    text-align: center;
+}
+.work .shopping iframe{
+    margin: 10px;
+    border: 1px solid;
+    height: 70% !important;
+    /* transform: scale(1); */
+    overflow: auto;
+}
+
+
+/* footer */
+footer{
+    height: 250px;
+    background-color: rgb(0, 95, 238);
+    color: white;
+    padding: 10px;
+}
+footer .row{
+    height: 200px;
+    overflow: hidden;
+}
+footer .col-8{
+    padding-top: 20px;
+}
+.copyright{
+    text-align: center;
+    margin: 0;
+}
+footer svg{
+    /* border: 1px solid; */
+    height: 25px;
+}
+textarea{
+    resize: none !important;
+    width: 100%;
+    height: 120px;
+}
+#message{
+    border-radius: 20px !important;
+    padding-left: 15px;
+}
+@media screen and (max-width: 768px) {
+    footer{
+        height: 250px !important;
+    }
+    footer .row{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 576px) {
+    footer{
+        height: 350px !important;
+    }
+    footer .row{
+        height: 300px;
+    }
+}
