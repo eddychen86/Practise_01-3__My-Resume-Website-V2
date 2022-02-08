@@ -16,6 +16,10 @@ body{
     margin: 0 !important;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 /* navbar */
 .menu{
     z-index: 50;
@@ -50,7 +54,6 @@ body{
 .menu .menu__link{
     color: rgb(0, 0, 0);
     line-height: 32px;
-    text-decoration: none;
 }
 .menu .menu__icon{
     justify-content: flex-end;
